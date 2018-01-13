@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.asmita.loginactivity.AdminHome">
+
+<ImageView
+    android:id="@+id/imageview"
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:text="Accept"
+        android:onClick="accept"
+
+        android:background="#38883c"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/rejectbtn"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/accept"
+        android:layout_alignBottom="@+id/accept"
+        android:layout_alignParentStart="true"
+        android:background="#D50000"
+        android:onClick="reject"
+        android:text="reject" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/accept"
+        android:layout_centerHorizontal="true"
+        android:background="#0091EA"
+        android:onClick="logout"
+        android:text="Logout" />
+
+</RelativeLayout>

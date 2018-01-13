@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#212121"
+
+    tools:context="com.example.asmita.loginactivity.MainProfileActivity">
+
+
+    <ImageButton
+            android:id="@+id/messageone"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.47"
+            android:background="@drawable/message"
+            app:srcCompat="@drawable/b1"
+        android:layout_marginBottom="43dp"
+        android:layout_above="@+id/logout"
+        android:layout_alignStart="@+id/callone" />
+
+
+    <ImageButton
+        android:id="@+id/viewmap"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_column="19"
+        android:layout_row="0"
+        android:layout_weight="0.47"
+        android:background="@drawable/gps"
+        app:srcCompat="@drawable/b1"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/callone" />
+
+    <ImageButton
+        android:id="@+id/callone"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:layout_weight="0.28"
+        android:background="@drawable/calling"
+        app:srcCompat="@drawable/b1"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="140dp"
+        android:layout_below="@+id/viewmap"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_column="3"
+        android:layout_row="2"
+        android:background="#D50000"
+        android:text="Logout" />
+
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="buttonViewImage" type="id" />
+    <item name="messageone" type="id" />
+    <item name="buttonChoose" type="id" />
+</resources>

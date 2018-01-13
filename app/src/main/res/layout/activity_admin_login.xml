@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context="com.example.asmita.loginactivity.AdminLogin">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="450dp"
+        android:layout_height="104dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/clean" />
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="91dp"
+        android:text="Admin ID"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Password"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_below="@+id/editTextadmin"
+        android:layout_alignStart="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/editTextadmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Password"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Enter your ID"
+        android:textColorHint="#B71C1C"
+        android:textColor="#FFFFFF"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/editTextpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:textColorHint="#B71C1C"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/Password"
+        android:layout_alignStart="@+id/Password" />
+
+    <Button
+        android:id="@+id/buttonadminlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="Login"
+        android:background="#0091EA"
+        android:onClick="adminLogin"/>
+
+</RelativeLayout>

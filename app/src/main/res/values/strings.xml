@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Clean WCE </string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="title_activity_call">call</string>
+    <string name="title_activity_starting">starting</string>
+    <string name="title_activity_logout">LogoutActivity</string>
+</resources>

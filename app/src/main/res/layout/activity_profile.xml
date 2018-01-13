@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context="com.example.asmita.loginactivity.ProfileActivity">
+
+    <TextView
+        android:id="@+id/text1id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView7"
+
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="95dp"
+        android:textStyle="bold"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="49dp"
+        android:text="Password"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+
+        android:layout_below="@+id/text1id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="59dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="Re -Password" />
+
+    <Button
+        android:id="@+id/buttonreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextmobno"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_toRightOf="@+id/textView8"
+        android:background="#38883c"
+        android:textColor="#4FC3F7"
+        android:onClick="registerUser"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/buttonclear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonreg"
+        android:layout_alignBottom="@+id/buttonreg"
+        android:layout_alignEnd="@+id/editTextmobno"
+        android:layout_alignRight="@+id/editTextmobno"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:background="#38883c"
+        android:textColor="#4FC3F7"
+        android:onClick="clearField"
+
+
+           android:text="Clear" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="Mob No"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:id="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/editTextunname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F44336"
+        android:layout_alignLeft="@+id/editTextpass"
+        android:layout_alignStart="@+id/editTextpass"
+        android:layout_alignTop="@+id/text1id"
+
+        android:ems="10"
+        android:hint="Enter the username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextrepass"
+        android:layout_alignStart="@+id/editTextrepass"
+        android:layout_alignTop="@+id/textView7"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F44336"
+        android:ems="10"
+        android:hint="Enter the passord"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextrepass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F44336"
+        android:ems="10"
+        android:hint="Enter the Re-Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextmobno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#F44336"
+        android:ems="10"
+        android:hint="Enter the phone"
+        android:inputType="phone"
+        android:layout_alignBaseline="@+id/textView10"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

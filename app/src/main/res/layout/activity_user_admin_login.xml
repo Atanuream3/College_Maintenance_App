@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/asmi"
+
+    tools:context="com.example.asmita.loginactivity.UserAdminLogin">
+
+    <ImageView
+        android:id="@+id/imageid"
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        app:srcCompat="@drawable/common_full_open_on_phone"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="140dp"
+        android:layout_marginTop="77dp"
+        android:background="@drawable/logo1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnadmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageid"
+        android:background="#00C853"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:text="Admin Login"
+        android:onClick="adminLogin"/>
+
+
+    <Button
+        android:id="@+id/btnuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnadmin"
+        android:background="#2979FF"
+        android:layout_below="@+id/btnadmin"
+        android:layout_marginTop="62dp"
+        android:text="User Login"
+        android:onClick="userLogin"/>
+</RelativeLayout>
